@@ -28,11 +28,9 @@
                     <small>+012 345 6789</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
-                    <a class="btn btn-sm-square bg-white carServ me-1" href=""><i
-                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white carServ me-1" href=""><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-sm-square bg-white carServ me-1" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-sm-square bg-white carServ me-1" href=""><i
-                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white carServ me-1" href=""><i class="fab fa-linkedin-in"></i></a>
                     <a class="btn btn-sm-square bg-white carServ me-0" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
@@ -51,17 +49,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <router-link to="/" class="nav-item nav-link active">
+                <router-link to="/" class="nav-item nav-link active menu">
                     Home
                 </router-link>
-                <router-link to="/about"  class="nav-item nav-link">
+                <router-link to="/about" class="nav-item nav-link menu">
                     About
                 </router-link>
-                <router-link to="/service"  class="nav-item nav-link">
+                <router-link to="/service" class="nav-item nav-link menu">
                     Services
                 </router-link>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown">Pages</a>
+                    <a href="#" class="nav-link dropdown-toggle menu" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="booking.html" class="dropdown-item ">Booking</a>
                         <a href="team.html" class="dropdown-item ">Technicians</a>
@@ -69,7 +67,7 @@
                         <a href="404.html" class="dropdown-item ">404 Page</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link ">Contact</a>
+                <a href="contact.html" class="nav-item nav-link menu">Contact</a>
             </div>
             <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i
                     class="fa fa-arrow-right ms-3"></i></a>
@@ -88,9 +86,12 @@
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //</h6>
-                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Wash Service Center</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Wash
+                                        Service Center</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i
+                                            class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
                                     <img class="img-fluid" src="./images/carousel-2.png" alt="">
@@ -105,9 +106,12 @@
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
                                 <div class="col-10 col-lg-7 text-center text-lg-start">
-                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //</h6>
-                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Wash Service Center</h1>
-                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">// Car Servicing //
+                                    </h6>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Qualified Car Wash
+                                        Service Center</h1>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i
+                                            class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
                                     <img class="img-fluid" src="./images/carousel-1.png" alt="">
@@ -134,36 +138,86 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="text-center">Explore Our Range Of Car Service & Repair</h2>
+
+                <div class="col wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex py-5 px-4">
-                        <i class="fa fa-certificate fa-3x carServ flex-shrink-0"></i>
                         <div class="ps-4">
-                            <h5 class="mb-3">Quality Servicing</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
+                            <div class="card text-center">
+                                <ul class="list-group list-group-flush">
+                                    <img class="mx-auto p-3 "
+                                        src="https://cube.getpitstop.com/assets/img/home-categories/periodic_car_service.svg"
+                                        alt="Periodic Services">
+                                    <li class="list-group-item">Schedule Service</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="d-flex bg-light py-5 px-4">
-                        <i class="fa fa-users-cog fa-3x carServ flex-shrink-0"></i>
-                        <div class="ps-4">
-                            <h5 class="mb-3">Expert Workers</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+
+                <div class="col wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex py-5 px-4">
-                        <i class="fa fa-tools fa-3x carServ flex-shrink-0"></i>
                         <div class="ps-4">
-                            <h5 class="mb-3">Modern Equipment</h5>
-                            <p>Diam dolor diam ipsum sit amet diam et eos erat ipsum</p>
-                            <a class="text-secondary border-bottom" href="">Read More</a>
+                            <div class="card text-center">
+                                <ul class="list-group list-group-flush">
+                                    <img class="mx-auto p-3"
+                                        src="https://cube.getpitstop.com/assets/img/home-categories/periodic_car_service.svg"
+                                        alt="Periodic Services">
+                                    <li class="list-group-item">Periodic Service</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="col wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <div class="ps-4">
+                            <div class="card text-center">
+                                <ul class="list-group list-group-flush">
+                                    <img class="mx-auto p-3"
+                                        src="https://cube.getpitstop.com/assets/img/home-categories/periodic_car_service.svg"
+                                        alt="Periodic Services">
+                                    <li class="list-group-item">Periodic Service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <div class="ps-4">
+                            <div class="card text-center">
+                                <ul class="list-group list-group-flush">
+                                    <img class="mx-auto p-3"
+                                        src="https://cube.getpitstop.com/assets/img/home-categories/periodic_car_service.svg"
+                                        alt="Periodic Services">
+                                    <li class="list-group-item">Periodic Service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="d-flex py-5 px-4">
+                        <div class="ps-4">
+                            <div class="card text-center">
+                                <ul class="list-group list-group-flush">
+                                    <img class="mx-auto p-3"
+                                        src="https://cube.getpitstop.com/assets/img/home-categories/periodic_car_service.svg"
+                                        alt="Periodic Services">
+                                    <li class="list-group-item">Periodic Service</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
         </div>
     </div>
@@ -229,7 +283,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="btn btn-primary py-3 px-5">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                    <router-link to="/about" class="btn btn-primary py-3 px-5">Read More<i class="fa fa-arrow-right ms-3"></i></router-link>
                 </div>
             </div>
         </div>
@@ -265,8 +319,7 @@
         </div>
     </div>
     <!-- Fact End -->
-
-
+    
     <!-- Service Start -->
     <div class="container-xxl service py-5">
         <div class="container">
@@ -317,8 +370,8 @@
                                     <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i
-                                            class="fa fa-arrow-right ms-3"></i></a>
+                                    <router-link to="/service" class="btn btn-primary py-3 px-5 mt-3">Read More<i
+                                            class="fa fa-arrow-right ms-3"></i></router-link>
                                 </div>
                             </div>
                         </div>
@@ -338,8 +391,8 @@
                                     <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i
-                                            class="fa fa-arrow-right ms-3"></i></a>
+                                    <router-link to="/service" class="btn btn-primary py-3 px-5 mt-3">Read More<i
+                                            class="fa fa-arrow-right ms-3"></i></router-link>
                                 </div>
                             </div>
                         </div>
@@ -359,8 +412,8 @@
                                     <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i
-                                            class="fa fa-arrow-right ms-3"></i></a>
+                                    <router-link to="/service" class="btn btn-primary py-3 px-5 mt-3">Read More<i
+                                            class="fa fa-arrow-right ms-3"></i></router-link>
                                 </div>
                             </div>
                         </div>
@@ -380,8 +433,8 @@
                                     <p><i class="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i class="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <a href="" class="btn btn-primary py-3 px-5 mt-3">Read More<i
-                                            class="fa fa-arrow-right ms-3"></i></a>
+                                    <router-link to="/service" class="btn btn-primary py-3 px-5 mt-3">Read More<i
+                                            class="fa fa-arrow-right ms-3"></i></router-link>
                                 </div>
                             </div>
                         </div>
@@ -393,62 +446,7 @@
     <!-- Service End -->
 
 
-    <!-- Booking Start -->
-    <div class="container-fluid bg-secondary booking my-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-6 py-5">
-                    <div class="py-5">
-                        <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
-                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
-                            ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt
-                            voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr
-                            ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class=" h-100 d-flex flex-column justify-content-center text-center p-5 wow zoomIn"
-                        data-wow-delay="0.6s">
-                        <h1 class="text-white mb-4">Book For A Service</h1>
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date1" data-target-input="nearest">
-                                        <input type="text" class="form-control border-0 datetimepicker-input"
-                                            placeholder="Service Date" data-target="#date1" data-toggle="datetimepicker"
-                                            style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0" placeholder="Special Request"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-secondary w-100 py-3" type="submit">Book Now</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Booking End -->
+
 
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -593,10 +591,10 @@ export default {
             $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
             return false;
         });
-  
+
     },
 
-    methods(){
+    methods() {
         function onReady(instance, CountUp) {
             const that = this;
             instance.update(that.endVal + 100);

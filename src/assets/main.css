@@ -25,6 +25,13 @@
     z-index: 99;
 }
 
+h1, .h1, h2, .h2, h3,  h4, .h4, h5, .h5, h6, .h6 {
+    font-family: "Barlow",sans-serif;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #0B2154;
+    font-size: 1.75rem;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -108,11 +115,10 @@
     font-weight: 800;
 }
 
-
 .navbar-light .navbar-nav .nav-link {
     margin-right: 30px;
     padding: 25px 0;
-    color:black;
+    color:rgb(0, 0, 0);
     font-size: 15px;
     text-transform: uppercase;
     outline: none;
@@ -474,4 +480,54 @@ body{
     font-family: "Barlow",sans-serif;
     font-weight: 700;
     line-height: 1.2;
+}
+
+
+/* CUSTOM CSS */
+
+/* <!---------------------------CUSTOM CSS ---------------------------> */
+
+/* <!---------------------------CUSTOM CSS ---------------------------> */
+
+.card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border:none;
+    height: 110%;
+    width: 150%;
+    border-radius: 10px;
+}
+
+.price{
+    font-size: 25px;
+    color:#0B2154;
+    font-weight: 700;
+}
+
+.old-price{
+    margin-left: 8px;
+    text-decoration: line-through;
+    font-size: 17px;
+}
+.ratings{
+    font-size: 12px;
+}
+.checked{
+    color:orange;
+}
+.unchecked{
+    color: rgb(161, 161, 161);
+    /* border: 1px solid orange; */
+}
+.rating-number{
+    color:#1390d8;
+    font-size: 14px;
+}
+
+.badge{
+    background-color: #1390d8;
+    font-size: 14px;
+    font-weight: 400;
+}
+.fa-cart-shopping{
+    margin-right: 5px;
 }
