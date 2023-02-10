@@ -9,6 +9,7 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 
+
 // import jquery from 'jquery';
 
 createApp(App).use(router).mount('#app')
