@@ -57,16 +57,6 @@
                 <router-link to="/service"  class="nav-item nav-link active">
                     Services
                 </router-link>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="booking.html" class="dropdown-item">Booking</a>
-                        <a href="team.html" class="dropdown-item">Technicians</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
             <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -146,7 +136,7 @@
                                     <p><i class="fa fa-check text-success me-3"></i>4 Hrs</p>
 
                                     <span class="btn btn-primary py-3 px-4 mt-3"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</span>
-                                    <span class="btn btn-warning py-3 px-4 mt-3"><i class="fa-solid fa-cart-shopping"></i> Book Now</span>
+                                    <span class="btn btn-warning text-light py-3 px-4 mt-3 book-now"><i class="fa-solid fa-bolt-lightning"></i> Book Now</span>
 
 
                                 </div>
@@ -161,39 +151,9 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <h3 class="mb-3">Regular Servicing</h3>
-                                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 13,999</span>
-                                    <span class="old-price text-secondary"><i class="fa-solid fa-indian-rupee-sign"></i>15,999</span>
-                                    <span class="badge bg-success">12% off </span>
-                                    <div class="ratings">
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star checked"></span>
-                                        <span class="fa fa-star unchecked"></span>
-                                        <span class="fa fa-star unchecked"></span>
-                                        <span class="rating-number">14,044 ratings | 269 answered questions</span>
-                                    </div>
-
-                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
-                                    <p><i class="fa fa-check text-success me-3"></i>4 Hrs</p>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tab-pane-3">
-                            <div class="row g-4">
-                                <div class="col-md-6" style="min-height: 350px;">
-                                    <div class="position-relative h-100">
-                                        <img class="position-absolute img-fluid w-100 h-100" src="./images/service-3.jpg"
-                                            style="object-fit: cover;" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <h3 class="mb-3">Regular Servicing</h3>
-                                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 13,999</span>
-                                    <span class="old-price text-secondary"><i class="fa-solid fa-indian-rupee-sign"></i>15,999</span>
+                                    <h3 class="mb-3">Standard Servicing</h3>
+                                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 14,999</span>
+                                    <span class="old-price text-secondary"><i class="fa-solid fa-indian-rupee-sign"></i>16,999</span>
                                     <span class="badge bg-success">12% off</span>
                                     <div class="ratings">
                                         <span class="fa fa-star checked"></span>
@@ -209,6 +169,42 @@
                                     <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i class="fa fa-check text-success me-3"></i>4 Hrs</p>
 
+                                    <span class="btn btn-primary py-3 px-4 mt-3"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</span>
+                                    <span class="btn btn-warning text-light py-3 px-4 mt-3 book-now"><i class="fa-solid fa-bolt-lightning"></i> Book Now</span>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tab-pane-3">
+                            <div class="row g-4">
+                                <div class="col-md-6" style="min-height: 350px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute img-fluid w-100 h-100" src="./images/service-3.jpg"
+                                            style="object-fit: cover;" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="mb-3">Complete Servicing</h3>
+                                    <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 15,999</span>
+                                    <span class="old-price text-secondary"><i class="fa-solid fa-indian-rupee-sign"></i>16,999</span>
+                                    <span class="badge bg-success">12% off</span>
+                                    <div class="ratings">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star unchecked"></span>
+                                        <span class="fa fa-star unchecked"></span>
+                                        <span class="rating-number">14,044 ratings | 269 answered questions</span>
+                                    </div>
+
+                                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>Expert Workers</p>
+                                    <p><i class="fa fa-check text-success me-3"></i>4 Hrs</p>
+
+                                    <span class="btn btn-primary py-3 px-4 mt-3"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</span>
+                                    <span class="btn btn-warning text-light py-3 px-4 mt-3 book-now"><i class="fa-solid fa-bolt-lightning"></i> Book Now</span>
 
                                 </div>
                             </div>

@@ -58,16 +58,6 @@
                 <router-link to="/service" class="nav-item nav-link menu">
                     Services
                 </router-link>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle menu" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu fade-up m-0">
-                        <a href="booking.html" class="dropdown-item ">Booking</a>
-                        <a href="team.html" class="dropdown-item ">Technicians</a>
-                        <a href="testimonial.html" class="dropdown-item ">Testimonial</a>
-                        <a href="404.html" class="dropdown-item ">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link menu">Contact</a>
             </div>
             <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i
                     class="fa fa-arrow-right ms-3"></i></a>

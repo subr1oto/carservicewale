@@ -57,13 +57,19 @@ h1, .h1, h2, .h2, h3,  h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .btn.btn-primary,
-.btn.btn-secondary {
-    background: #1390d8;
-    color: #fff;
-    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
-    border:none;
-    border-radius: 0;
-
+.btn.btn-secondary{
+background: #1390d8;
+color: #fff;
+box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+border:none;
+border-radius: 0;
+}
+.btn.btn-warning{
+background: orange;
+color: #fff;
+box-shadow: 0 10px 30px 0 rgb(0 0 0 / 15%);
+border:none;
+border-radius: 0;
 }
 
 .btn-square {
@@ -530,4 +536,9 @@ body{
 }
 .fa-cart-shopping{
     margin-right: 5px;
+
+}
+.book-now{
+    margin-left: 15px;
+    font-weight: 600;
 }
