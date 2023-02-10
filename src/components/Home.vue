@@ -51,9 +51,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
+                <router-link to="/" class="nav-item nav-link active">
+                    Home
+                </router-link>
+                <router-link to="/about"  class="nav-item nav-link">
+                    About
+                </router-link>
+                <router-link to="/service"  class="nav-item nav-link">
+                    Services
+                </router-link>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
@@ -519,7 +525,6 @@
 
 <script>
 import $ from 'jquery';
-import counterUp from 'counterup2'
 
 export default {
     data() {
@@ -594,36 +599,7 @@ export default {
             $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
             return false;
         });
-
-        // Facts counter
-        const el01 = document.querySelector('.counter-up-01')
-        const el02 = document.querySelector('.counter-up-02')
-        const el03 = document.querySelector('.counter-up-03')
-        const el04 = document.querySelector('.counter-up-04')
-        counterUp(el01,{
-            duration: 1000,
-            delay: 16,
-        });
-        counterUp(el02,{
-            duration: 1000,
-            delay: 16,
-        });
-        counterUp(el03,{
-            duration: 1000,
-            delay: 16,
-        });
-        counterUp(el04,{
-            duration: 1000,
-            delay: 16,
-        });
-
-        // Date and time picker
-        $('.date').datetimepicker({
-            format: 'L'
-        });
-        $('.time').datetimepicker({
-            format: 'LT'
-        });
+  
     },
 
     methods(){
