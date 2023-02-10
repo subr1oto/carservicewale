@@ -71,12 +71,30 @@
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#carChooseModal">Select Car<i class="fa fa-car ms-3"></i></a>
+                
         </div>
     </nav>
     <!-- Navbar End -->
-
+    
+    <!-- Dialog Modal -->
+    <div class="modal fade" id="carChooseModal" tabindex="-1" aria-labelledby="carChooseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is some placeholder content to show a vertically centered modal. We've added some extra copy here to show how vertically centering the modal works when combined with scrollable modals. We also use some repeated line breaks to quickly extend the height of the content, thereby triggering the scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
@@ -529,16 +547,7 @@ import $ from 'jquery';
 export default {
     data() {
         return {
-            delay: 1000,
-            endVal: 120500,
-            options: {
-                useEasing: true,
-                useGrouping: true,
-                separator: ',',
-                decimal: '.',
-                prefix: '',
-                suffix: ''
-            }
+            
         }
     },
     mounted() {
