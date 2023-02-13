@@ -7,7 +7,7 @@
 
 /********** Template CSS **********/
 :root {
-    --primary: #1390d8;
+    --primary: #0d6efd !important;
     --secondary: #0B2154;
     --light: #F2F2F2;
     --dark: #111111;
@@ -116,7 +116,7 @@ border-radius: 0;
 }
 
 .carServ{
-    color:#1390d8;
+    color:#0d6efd !important;;
     font-family: "Barlow",sans-serif;
     font-weight: 800;
 }
@@ -275,9 +275,19 @@ body{
 }
 
 
+.services-name, h5{
+    cursor: pointer;
+    color:black;
+}
+.services-name, h5:hover{
+    color: #0d6efd !important;
+}
+
 /*** Booking ***/
 .booking {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/carousel-bg-2.jpg) center center no-repeat;
+    
+    background: rgb(0,16,36);
+    background: linear-gradient(90deg, rgba(0,16,36,1) 0%, rgba(9,68,121,0.9136029411764706) 35%, rgba(0,212,255,1) 100%),url(../components/images/img.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -306,69 +316,6 @@ body{
 .bootstrap-datetimepicker-widget table td.today::before {
     border-bottom-color: var(--primary);
 }
-
-
-/*** Team ***/
-.team-item .team-overlay {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--primary);
-    transform: scale(0);
-    transition: .5s;
-}
-
-.team-item:hover .team-overlay {
-    transform: scale(1);
-}
-
-.team-item .team-overlay .btn {
-    color: var(--primary);
-    background: #FFFFFF;
-}
-
-.team-item .team-overlay .btn:hover {
-    color: #FFFFFF;
-    background: var(--secondary)
-}
-
-
-/*** Testimonial ***/
-.testimonial-carousel .owl-item .testimonial-text,
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text {
-    background: var(--primary) !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-text * {
-    color: #FFFFFF !important;
-}
-
-.testimonial-carousel .owl-dots {
-    margin-top: 24px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-}
-
-.testimonial-carousel .owl-dot {
-    position: relative;
-    display: inline-block;
-    margin: 0 5px;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #CCCCCC;
-    transition: .5s;
-}
-
-.testimonial-carousel .owl-dot.active {
-    background: var(--primary);
-    border-color: var(--primary);
-}
-
 
 /*** Footer ***/
 .footer {
@@ -496,11 +443,19 @@ body{
 /* <!---------------------------CUSTOM CSS ---------------------------> */
 
 .card{
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border:none;
     height: 110%;
     width: 150%;
     border-radius: 10px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
 .price{
@@ -542,3 +497,35 @@ body{
     margin-left: 15px;
     font-weight: 600;
 }
+
+
+
+
+
+/*--------------------------------------------------------------
+# Clients
+--------------------------------------------------------------*/
+.clients {
+    padding: 12px 0;
+    text-align: center;
+    background-color: #ebe6e6;
+  }
+  
+  .clients img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100);
+  }
+  
+  .clients img:hover {
+    filter: none;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .clients img {
+      max-width: 40%;
+    }
+  }
