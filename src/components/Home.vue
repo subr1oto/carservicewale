@@ -60,7 +60,7 @@
                 <router-link to="/service"  class="nav-item nav-link">
                     Services
                 </router-link>
-                <div class="nav-item dropdown">
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="booking.html" class="dropdown-item">Booking</a>
@@ -68,8 +68,8 @@
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div> -->
+                <!-- <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
             <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#carChooseModal">Select Car<i class="fa fa-car ms-3"></i></a>
                 
@@ -97,11 +97,11 @@
     </div>
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5">
+    <div class="container-fluid fact p-0 mb-5" style="background-size: cover;">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="./images/carousel-bg-1.jpg" alt="Image">
+                    <img class="w-50" src="./images/carousel-bg-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -113,15 +113,15 @@
                                     <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Learn More<i
                                             class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
-                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="img-fluid" src="./images/carousel-1.png" alt="">
+                                <div class="col-lg-5 d-none d-lg-flex animate__animated animate__zoomIn">
+                                    <img class="img-fluid" src="./images/carousel-1.png" style="animation: zoomIn; animation-duration: 2s;" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="./images/carousel-bg-2.jpg" alt="Image">
+                    <img class="w-50" src="./images/carousel-bg-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex align-items-center">
                         <div class="container">
                             <div class="row align-items-center justify-content-center justify-content-lg-start">
@@ -134,7 +134,7 @@
                                             class="fa fa-arrow-right ms-3"></i></a>
                                 </div>
                                 <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
-                                    <img class="img-fluid" src="./images/carousel-2.png" alt="">
+                                    <img class="img-fluid" src="./images/carousel-2.png" style="animation: zoomIn; animation-duration: 2s;" alt="">
                                 </div>
                             </div>
                         </div>
@@ -267,12 +267,18 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                     <i class="fa fa-check fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2 counter-up-01" data-toggle="counter-up">1234</h2>
+                    <h2>
+                        <count-up class="text-white mb-2" :end-val="1234" :options="options"></count-up>
+                    </h2>
+                    <!-- <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2> -->
                     <p class="text-white mb-0">Years Experience</p>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
                     <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
-                    <h2 class="text-white mb-2 counter-up-02" data-toggle="counter-up">1234</h2>
+                    <h2>
+                        <count-up class="text-white mb-2" :end-val="1234" :options="options"></count-up>
+                    </h2>
+                    <!-- <h2 class="text-white mb-2 counter-up-02" data-toggle="counter-up">1234</h2> -->
                     <p class="text-white mb-0">Expert Technicians</p>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
@@ -541,14 +547,26 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 import $ from 'jquery';
+import CountUp from 'vue-countup-v3'
+import type { CountUpOptions } from 'vue-countup-v3'
+import 'animate.css';
 
 export default {
-    data() {
-        return {
-            
+    setup(){
+        const options: CountUpOptions = {
+            enableScrollSpy: true
         }
+        return {options};
+    },
+    data(){
+        return{
+
+        }
+    },
+    components:{
+        CountUp
     },
     mounted() {
         var spinner = function () {
@@ -559,6 +577,11 @@ export default {
             }, 1);
         };
         spinner();
+
+        // $('[data-toggle="counter-up"]').counterUp({
+        //     delay: 10,
+        //     time: 2000
+        // });
 
         // Sticky Navbar
         $(window).scroll(function () {
@@ -608,11 +631,9 @@ export default {
             $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
             return false;
         });
-  
     },
-
-    methods(){
-        function onReady(instance, CountUp) {
+    methods:{
+        onReady(instance, CountUp) {
             const that = this;
             instance.update(that.endVal + 100);
         }

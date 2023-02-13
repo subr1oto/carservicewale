@@ -57,7 +57,7 @@
                 <router-link to="/service"  class="nav-item nav-link active">
                     Services
                 </router-link>
-                <div class="nav-item dropdown">
+                <!-- <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                     <div class="dropdown-menu fade-up m-0">
                         <a href="booking.html" class="dropdown-item">Booking</a>
@@ -66,7 +66,7 @@
                         <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a> -->
             </div>
             <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
         </div>
@@ -98,10 +98,337 @@
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="text-primary text-uppercase">// Our Services //</h6>
                 <h1 class="mb-5">Explore Our Services</h1>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="offer-tabs nav-pills me-4">
+                            <ul class="nav nav-tabs" id="offerTab" role="tablist">
+                                <li class="nav-item show">
+                                    <a class="nav-link active" id="all-tab" data-bs-toggle="pill" @click="selected='Showall'" data-bs-target="#ShowAll" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="false">All Brands</a>
+                                </li>
+                                <li class="nav-item show">
+                                    <a class="nav-link" id="all-tab" data-toggle="tab" @click="selected='Nissan'" data-bs-toggle="pill" data-bs-target="#Nissan" href="#all" role="tab" aria-controls="all" aria-selected="false">Nissan</a>
+                                </li>
+                                <li class="nav-item show">
+                                    <a class="nav-link" id="all-tab" data-toggle="tab" @click="selected='Toyota'" data-bs-toggle="pill" data-bs-target="#Toyota" href="#all" role="tab" aria-controls="all" aria-selected="false">Toyota</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="offerTabContent">
+                    <div class="tab-pane fade active show" v-if="selected=='Showall'">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/offer-toyota.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Toyota Alphard</h3>
+                                        </a>
+                                        <h4>
+                                            $50.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/nissan-offer.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Nissan 370Z</h3>
+                                        </a>
+                                        <h4>
+                                            $75.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/audi-offer.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Audi Q3</h3>
+                                        </a>
+                                        <h4>
+                                            $45.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="tab-content" id="offerTabContent">
+                    <div class="tab-pane fade active show" v-if="selected=='Nissan'">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="	http://themescare.com/demos/gauto-preview/assets/img/bmw-offer.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>BMW X3</h3>
+                                        </a>
+                                        <h4>
+                                            $50.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/audi-offer.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Audi Q3</h3>
+                                        </a>
+                                        <h4>
+                                            $75.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/toyota-offer-2.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Toyota Camry</h3>
+                                        </a>
+                                        <h4>
+                                            $55.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="tab-content" id="offerTabContent">
+                    <div class="tab-pane fade active show" v-if="selected=='Toyota'">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/nissan-offer.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Nissan 370Z</h3>
+                                        </a>
+                                        <h4>
+                                            $75.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/offer-toyota.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Toyota Alphard</h3>
+                                        </a>
+                                        <h4>
+                                            $50.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="single-offers">
+                                    <div class="offer-image">
+                                        <a href="#">
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/audi-offer.png" alt="offer 1">
+                                        </a>
+                                    </div>
+                                    <div class="offer-text">
+                                        <a href="#">
+                                            <h3>Audi Q3</h3>
+                                        </a>
+                                        <h4>
+                                            $45.00<span>/ Day</span>
+                                        </h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa fa-car"></i> Model:2017
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-cogs"></i> Automatic
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-dashboard"></i> 20kmpl
+                                            </li>
+                                        </ul>
+                                        <div class="offer-action">
+                                            <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
+                                            <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
+            <!-- <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="col-lg-4">
                     <div class="nav w-100 nav-pills me-4">
+
                         <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                             <i class="fa fa-car-side fa-2x me-3"></i>
                             <h4 class="m-0">Diagnostic Test</h4>
@@ -196,7 +523,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Service End -->
@@ -374,7 +701,7 @@ import $ from 'jquery';
 export default{
     data(){
         return{
-
+            selected: "Showall"
         }
     },
     mounted(){
