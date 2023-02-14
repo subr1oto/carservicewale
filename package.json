@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host 0.0.0.0",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -16,6 +16,7 @@
     "bootstrap": "^5.0.0",
     "counterup2": "^2.0.2",
     "jquery": "^3.6.3",
+    "mdb-ui-kit": "^6.1.0",
     "popper.js": "^1.16.1",
     "vue-router": "^4.1.6"
   }

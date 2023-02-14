@@ -9,6 +9,10 @@ import '@fortawesome/fontawesome-free/js/all.js'
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 
+import 'mdb-ui-kit/css/mdb.min.css';
+
+
+
 // import CountUp from 'vue-countup-v3'
 // import 'animate.css';
 

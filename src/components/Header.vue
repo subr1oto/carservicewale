@@ -57,8 +57,11 @@
                 <router-link :to="{ name: 'Service' }" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
                     Services
                 </router-link>
-                <router-link :to="{ name: 'Service' }" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
+                <!-- <router-link :to="{ name: 'Service' }" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
                     Contact Us
+                </router-link> -->
+                <router-link :to="{ name: 'Login' }" :class="getActiveNavLink('Login')" class="nav-item nav-link menu">
+                    Login
                 </router-link>
             </div>
 

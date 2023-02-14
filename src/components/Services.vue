@@ -65,30 +65,28 @@
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
         <div class="container">
-            <div class="row" data-aos="zoom-in">
-
-
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center services-name">
+            <div class="row offer-tabs nav-pills me-4" data-aos="zoom-in">
+                <div class="nav-item show col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center services-name"  data-toggle="tab" data-bs-toggle="pill" aria-selected="false">
                     <h5>Schedule Services</h5>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <div class="nav-item show col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-toggle="tab" data-bs-toggle="pill" aria-selected="false">
                     <h5>Cleaning & Detailing</h5>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <div class="nav-item show col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-toggle="tab" data-bs-toggle="pill" aria-selected="false">
                     <h5>Denting Painting</h5>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-toggle="tab" data-bs-toggle="pill" aria-selected="false">
                     <h5>AC Services</h5>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-toggle="tab" data-bs-toggle="pill">
                     <h5>Battery Service</h5>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center" data-toggle="tab" data-bs-toggle="pill"> 
                     <h5>Wheel Service</h5>
                 </div>
 
@@ -108,8 +106,8 @@
             <div class="container-xxl service py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-primary text-uppercase">// Our Services //</h6>
-                <h1 class="mb-5">Explore Our Services</h1>
+                <!-- <h6 class="text-primary text-uppercase">// Our Services //</h6>
+                <h1 class="mb-5">Explore Our Services</h1> -->
                 <div class="row">
                     <div class="col-md-12">
                         <div class="offer-tabs nav-pills me-4">
@@ -133,13 +131,15 @@
                         <div class="row">
                             <div class="col-lg-4">
                                 <div class="single-offers">
-                                    <div class="offer-image">
-                                        <div class="category-services-image cursor-pointer">
-                                            <div class="w-100" style="text-align: center; background: #009F66; font-weight: 500; font-size: 10px; line-height: 180%; color: #FFFFFF; position: absolute; top: 0; border-top-left-radius: 8px; height: 18px;">MOST POPULAR</div>
-                                            <a href="#">
-                                                <img src="http://themescare.com/demos/gauto-preview/assets/img/offer-toyota.png" alt="offer 1" style="position: relative;">
-                                            </a>
-                                        </div>
+                                    <div class="offer-image">   
+                                        <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
+                                            <img src="http://themescare.com/demos/gauto-preview/assets/img/offer-toyota.png" alt="offer 1" style="position: relative;">
+                                        </a>
                                     </div>
                                     <div class="offer-text">
                                         <a href="#">
@@ -163,6 +163,7 @@
                                             <a href="#" class="offer-btn-1 text-decoration-none">Rent Car</a>
                                             <a href="#" class="offer-btn-2 text-decoration-none">Details</a>
                                         </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -170,6 +171,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="http://themescare.com/demos/gauto-preview/assets/img/nissan-offer.png" alt="offer 1">
                                         </a>
                                     </div>
@@ -202,6 +208,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="http://themescare.com/demos/gauto-preview/assets/img/audi-offer.png" alt="offer 1">
                                         </a>
                                     </div>
@@ -241,6 +252,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="	http://themescare.com/demos/gauto-preview/assets/img/bmw-offer.png" alt="offer 1">
                                         </a>
                                     </div>
@@ -273,6 +289,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="http://themescare.com/demos/gauto-preview/assets/img/audi-offer.png" alt="offer 1">
                                         </a>
                                     </div>
@@ -305,6 +326,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="http://themescare.com/demos/gauto-preview/assets/img/toyota-offer-2.png" alt="offer 1">
                                         </a>
                                     </div>
@@ -344,6 +370,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="http://themescare.com/demos/gauto-preview/assets/img/nissan-offer.png" alt="offer 1">
                                         </a>
                                     </div>
@@ -376,6 +407,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="http://themescare.com/demos/gauto-preview/assets/img/offer-toyota.png" alt="offer 1">
                                         </a>
                                     </div>
@@ -408,6 +444,11 @@
                                 <div class="single-offers">
                                     <div class="offer-image">
                                         <a href="#">
+                                            <div class="py-1">
+                                                <button class="bg-danger px-2 py-1 btn btn-sm btn-outline-danger text-uppercase ng-star-inserted" style="float: right;">
+                                                    <img src="https://www.getpitstop.com/assets/img/add_white.png" width="15px" height="15px" class="mr-1" alt=""> Add
+                                                </button>
+                                            </div>
                                             <img src="http://themescare.com/demos/gauto-preview/assets/img/audi-offer.png" alt="offer 1">
                                         </a>
                                     </div>
