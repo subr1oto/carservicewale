@@ -21,8 +21,23 @@
                     <div class="bg-dark h-100 d-flex flex-column justify-content-center text-center p-5">
                         <h1 class="text-white mb-4">Book For A Service</h1>
                         <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
+                            <nav class="navbar bg-body-tertiary">
+                                <div class="container-fluid">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-3 mx-5 my-5" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." style="height: 55px;">
+                                        <datalist id="datalistOptions">
+                                            <option value="San Francisco"></option>
+                                            <option value="New York"></option>
+                                            <option value="Seattle"></option>
+                                            <option value="Los Angeles"></option>
+                                            <option value="Chicago"></option>
+                                        </datalist>
+                                        <button type="button" class="btn btn-primary my-5" style="height: 55px;"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                            </nav>
+                            <!-- <div class="row g-3"> -->
+                                <!-- <div class="col-12 col-sm-6">
                                     <input type="text" class="form-control border-0" placeholder="Your Name"
                                         style="height: 55px;">
                                 </div>
@@ -55,8 +70,8 @@
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-secondary w-100 py-3" type="submit">View Services</button>
-                                </div>
-                            </div>
+                                </div> -->
+                            <!-- </div> -->
                         </form>
                     </div>
                 </div>
@@ -435,6 +450,25 @@ export default {
 
         }
     },
+    methods() {
+        async function postData(url = '', data = {}) {
+            // Default options are marked with *
+            const response = await fetch(url, {
+                method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                mode: 'cors', // no-cors, *cors, same-origin
+                cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                credentials: 'same-origin', // include, *same-origin, omit
+                headers: {
+                'Content-Type': 'application/json'
+                // 'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                redirect: 'follow', // manual, *follow, error
+                referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                body: JSON.stringify(data) // body data type must match "Content-Type" header
+            });
+            return response.json(); // parses JSON response into native JavaScript objects
+        }
+    },
     // components: {
     //     CountUp
     // },
@@ -502,13 +536,6 @@ export default {
             return false;
         });
 
-    },
-
-    methods() {
-        function onReady(instance, CountUp) {
-            const that = this;
-            instance.update(that.endVal + 100);
-        }
     }
 }
 

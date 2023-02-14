@@ -62,9 +62,11 @@
     </section>
 </template>
 
-<script setup>
-import * as mdb from 'mdb-ui-kit';
-import { Input } from 'mdb-ui-kit';
+<script>
+// import Header from "./Header.vue";
+// export default{
+//     components: {Header}
+// }
 </script>
 
 <style scoped>
