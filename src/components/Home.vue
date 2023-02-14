@@ -1,8 +1,8 @@
 
 <template>
 
-    <Header/>
-  
+    <Header />
+
 
     <!-- Caruosel -->
     <div class="container-fluid bg-secondary booking  wow fadeInUp" data-wow-delay="0.1s">
@@ -11,7 +11,10 @@
                 <div class="col-lg-6 py-5">
                     <div class="py-5">
                         <h1 class="text-white mb-4">Certified and Award Winning Car Repair Service Provider</h1>
-                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                        <p class="text-white mb-0">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
+                            ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt
+                            voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr
+                            ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -20,10 +23,12 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select border-0" style="height: 55px;">
@@ -59,39 +64,39 @@
         </div>
     </div>
 
-      <!-- ======= Clients Section ======= -->
-      <section id="clients" class="clients section-bg">
-      <div class="container">
-        <div class="row" data-aos="zoom-in">
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+        <div class="container">
+            <div class="row" data-aos="zoom-in">
 
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="../components/images/clients/client-1.png" class="img-fluid" alt="">
-          </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../components/images/clients/client-1.png" class="img-fluid" alt="">
+                </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="../components/images/clients/client-2.png" class="img-fluid" alt="">
-          </div>
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../components/images/clients/client-2.png" class="img-fluid" alt="">
+                </div>
 
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="../components/images/clients/client-3.png" class="img-fluid" alt="">
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../components/images/clients/client-3.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../components/images/clients/client-4.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../components/images/clients/client-5.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+                    <img src="../components/images/clients/client-6.png" class="img-fluid" alt="">
+                </div>
+
+            </div>
+
         </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="../components/images/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="../components/images/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="../components/images/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
     </section><!-- End Cliens Section -->
 
 
@@ -416,23 +421,23 @@
 
 
 
-<Footer/>
+    <Footer />
 </template>
 
-<script lang="ts">
+<script>
 import $ from 'jquery';
 import Header from "./Header.vue"
 import Footer from "./Footer.vue"
 export default {
-    components:{Header,Footer},
+    components: { Header, Footer },
     data() {
         return {
 
         }
     },
-    components:{
-        CountUp
-    },
+    // components: {
+    //     CountUp
+    // },
     mounted() {
         var spinner = function () {
             setTimeout(function () {
@@ -511,6 +516,6 @@ export default {
 
 <style scoped>
 input {
-  width: 100%;
+    width: 100%;
 }
 </style>
