@@ -3,35 +3,38 @@
         {
             "id": 1,
             "brandName": "Audi",
-            "logo": "https://csw-images.s3.amazonaws.com/images/Audi_logo.jpg"
+            "logo": "https://csw-images.s3.amazonaws.com/images/Audi_logo.jpg",
+            "total": 6
         },
         {
             "id": 2,
             "brandName": "Tata",
-            "logo": "https://csw-images.s3.amazonaws.com/images/Tata_logo.jpg"
+            "logo": "https://csw-images.s3.amazonaws.com/images/Tata_logo.jpg",
+            "total": 6
         },
         {
             "id": 3,
             "brandName": "Bmw",
-            "logo": "https://csw-images.s3.amazonaws.com/images/brand-logo-BMW.png"
+            "logo": "https://csw-images.s3.amazonaws.com/images/brand-logo-BMW.png",
+            "total": 6
         }
     ],
     "models": [
         {
             "id": 1,
             "brandName": "Audi",
-            "modelName": "Audi A6",
+            "modelName": "A6",
             "price": 9000,
             "logo": "https://csw-images.s3.amazonaws.com/images/Audi_A6.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 2,
             "brandName": "Audi",
-            "modelName": "Audi A7",
+            "modelName": "A7",
             "price": 10000,
             "logo": "https://csw-images.s3.amazonaws.com/images/Audi_A7.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 3,
@@ -39,7 +42,7 @@
             "modelName": "Audi A3",
             "price": 8000,
             "logo": "https://csw-images.s3.amazonaws.com/images/Audi_A3.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 4,
@@ -47,7 +50,7 @@
             "modelName": "Audi A4",
             "price": 7000,
             "logo": "https://csw-images.s3.amazonaws.com/images/Audi_A4.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
         {
             "id": 5,
@@ -55,7 +58,7 @@
             "modelName": "Audi A8",
             "price": 8000,
             "logo": "https://csw-images.s3.amazonaws.com/images/Audi_A8.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
         {
             "id": 6,
@@ -63,16 +66,15 @@
             "modelName": "Audi Q7",
             "price": 6000,
             "logo": "https://csw-images.s3.amazonaws.com/images/Audi_Q7.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
-        
         {
             "id": 7,
             "brandName": "Tata",
             "modelName": "Tata Bolt",
             "price": 11000,
             "logo": "https://csw-images.s3.amazonaws.com/images/Tata_Bolt.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 8,
@@ -80,7 +82,7 @@
             "modelName": "Tata Indica Vista",
             "price": 7500,
             "logo": "https://csw-images.s3.amazonaws.com/images/Tata_indica-vista.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 9,
@@ -88,7 +90,7 @@
             "modelName": "Tata Venture",
             "price": 8500,
             "logo": "https://csw-images.s3.amazonaws.com/images/Tata_Venture.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 10,
@@ -96,7 +98,7 @@
             "modelName": "Tata Xenon",
             "price": 9500,
             "logo": "https://csw-images.s3.amazonaws.com/images/Tata_Xenon.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
         {
             "id": 11,
@@ -104,7 +106,7 @@
             "modelName": "Tata Altroz",
             "price": 11500,
             "logo": "https://csw-images.s3.amazonaws.com/images/Tata-Altroz.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
         {
             "id": 12,
@@ -112,16 +114,15 @@
             "modelName": "Tata Aria",
             "price": 12500,
             "logo": "https://csw-images.s3.amazonaws.com/images/Tata-Aria.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
-        
         {
             "id": 13,
             "brandName": "Bmw",
             "modelName": "BMW 1 Series",
             "price": 13500,
             "logo": "https://csw-images.s3.amazonaws.com/images/BMW-1-Series.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 14,
@@ -129,7 +130,7 @@
             "modelName": "BMW 3 Series",
             "price": 14500,
             "logo": "https://csw-images.s3.amazonaws.com/images/BMW-3-Series.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 15,
@@ -137,7 +138,7 @@
             "modelName": "BMW 5 Series",
             "price": 15500,
             "logo": "https://csw-images.s3.amazonaws.com/images/BMW-5-Series.jpg",
-            "petrolOrDiesel": "petrol"
+            "type": "petrol"
         },
         {
             "id": 16,
@@ -145,7 +146,7 @@
             "modelName": "BMW 6 Series",
             "price": 16500,
             "logo": "https://csw-images.s3.amazonaws.com/images/BMW-6-Series.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
         {
             "id": 17,
@@ -153,7 +154,7 @@
             "modelName": "BMW M3",
             "price": 17500,
             "logo": "https://csw-images.s3.amazonaws.com/images/BMW-M3.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         },
         {
             "id": 18,
@@ -161,9 +162,7 @@
             "modelName": "BMW M5",
             "price": 18500,
             "logo": "https://csw-images.s3.amazonaws.com/images/BMW-M5.jpg",
-            "petrolOrDiesel": "diesel"
+            "type": "diesel"
         }
-
-
     ]
 }

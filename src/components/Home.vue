@@ -21,57 +21,43 @@
                     <div class="bg-dark h-100 d-flex flex-column justify-content-center text-center p-5">
                         <h1 class="text-white mb-4">Book For A Service</h1>
                         <form>
-                            <nav class="navbar bg-body-tertiary">
+                            <nav>
                                 <div class="container-fluid">
-                                    <form class="d-flex" role="search">
-                                        <input class="form-control me-3 mx-5 my-5" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." style="height: 55px;">
-                                        <datalist id="datalistOptions">
-                                            <option value="San Francisco"></option>
-                                            <option value="New York"></option>
-                                            <option value="Seattle"></option>
-                                            <option value="Los Angeles"></option>
-                                            <option value="Chicago"></option>
-                                        </datalist>
-                                        <button type="button" class="btn btn-primary my-5" style="height: 55px;"><i class="fa fa-search"></i></button>
+                                    <form class="d-flex row g-3" role="search">
+                                        <div class="col-12 col-sm-12">
+                                            <!-- <v-select
+                                                :filter="fuseSearch"
+                                                :options="carObject"
+                                                :get-option-label="(option) => option.modelName"
+                                                v-model="search"
+                                            >
+                                                <template #option="{ carObject }">
+                                                {{ carObject.brandName }}
+                                                <br />
+                                                <cite>{{ carObject.type }} {{ carObject.price }}</cite>
+                                                </template>
+                                            </v-select> -->
+                                            <v-select :options="carObject" label="modelName" :keydown="handlers()">
+                                                <template v-slot:option="option">
+                                                    {{ option.modelName }} <br>
+                                                    <cite>{{ option.type }}</cite>
+                                                    <img
+                                                    :src="option.logo"
+                                                    style="float: right; border-radius: 10px"
+                                                    width="25"
+                                                    />
+                                                </template>
+                                            </v-select>
+                                        
+                                            </div>
+                                            <div class="col-md-12">
+                                                <router-link to="/service">
+                                                    <button type="button" :disabled="search.length ? false:true" class="btn btn-primary border-0 my-1 w-100" style="height: 55px;">Book Now</button>
+                                                </router-link>
+                                            </div>
                                     </form>
                                 </div>
                             </nav>
-                            <!-- <div class="row g-3"> -->
-                                <!-- <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email"
-                                        style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select Your Brand</option>
-                                        <option value="1">KIA</option>
-                                        <option value="2">HONDA</option>
-                                        <option value="3">TATA</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select Your Model</option>
-                                        <option value="1">KIA</option>
-                                        <option value="2">HONDA</option>
-                                        <option value="3">TATA</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select Car Type</option>
-                                        <option value="1">PETROL</option>
-                                        <option value="2">DIESEL</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-secondary w-100 py-3" type="submit">View Services</button>
-                                </div> -->
-                            <!-- </div> -->
                         </form>
                     </div>
                 </div>
@@ -120,7 +106,6 @@
         <div class="container">
             <div class="row g-4">
                 <h2 class="text-center">Explore Our Range Of Car Service & Repair</h2>
-
                 <div class="col wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex py-5 px-4">
                         <div class="ps-4">
@@ -195,10 +180,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </div>
@@ -279,18 +260,18 @@
             <div class="row g-4">
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
                     <i class="fa fa-check fa-2x text-white mb-3"></i>
-                    <h2>
+                    <!-- <h2>
                         <count-up class="text-white mb-2" :end-val="1234" :options="options"></count-up>
-                    </h2>
-                    <!-- <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2> -->
+                    </h2> -->
+                    <h2 class="text-white mb-2" data-toggle="counter-up">1234</h2>
                     <p class="text-white mb-0">Years Experience</p>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
                     <i class="fa fa-users-cog fa-2x text-white mb-3"></i>
-                    <h2>
+                    <!-- <h2>
                         <count-up class="text-white mb-2" :end-val="1234" :options="options"></count-up>
-                    </h2>
-                    <!-- <h2 class="text-white mb-2 counter-up-02" data-toggle="counter-up">1234</h2> -->
+                    </h2> -->
+                    <h2 class="text-white mb-2 counter-up-02" data-toggle="counter-up">1234</h2>
                     <p class="text-white mb-0">Expert Technicians</p>
                 </div>
                 <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
@@ -443,36 +424,63 @@
 import $ from 'jquery';
 import Header from "./Header.vue"
 import Footer from "./Footer.vue"
+import vSelect from "vue-select";
+import Fuse from 'fuse.js'
+// import { url } from 'inspector';
 export default {
-    components: { Header, Footer },
+    components: { Header, Footer, vSelect },
     data() {
         return {
-
+            attributes: {
+                'value': this.search
+            },
+            events: {
+                'input': (e) => this.search = e.target.value
+            },
+            carObject: [],
+            search: ""
         }
     },
-    methods() {
-        async function postData(url = '', data = {}) {
-            // Default options are marked with *
-            const response = await fetch(url, {
-                method: 'POST', // *GET, POST, PUT, DELETE, etc.
-                mode: 'cors', // no-cors, *cors, same-origin
-                cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-                credentials: 'same-origin', // include, *same-origin, omit
+    methods: {
+        fuseSearch(options, search) {
+        const fuse = new Fuse(options, {
+            keys: ['carObject','carObject.modelName', 'carObject.type', 'carObject.brandName'],
+            shouldSort: true,
+        })
+        return this.search.length
+            ? fuse.search(search).map(({ item }) => item)
+            : fuse.list
+        },
+
+        async postData() {
+            const response = await fetch('http://localhost:3000/models', {
+                method: 'GET',
+                mode: 'cors', 
+                cache: 'no-cache', 
+                credentials: 'same-origin',
                 headers: {
                 'Content-Type': 'application/json'
-                // 'Content-Type': 'application/x-www-form-urlencoded',
                 },
-                redirect: 'follow', // manual, *follow, error
-                referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-                body: JSON.stringify(data) // body data type must match "Content-Type" header
+                redirect: 'follow',
+                referrerPolicy: 'no-referrer'
             });
-            return response.json(); // parses JSON response into native JavaScript objects
+            this.carObject = await response.json();
+            return response;
+        },
+        handlers(e){
+            e?.preventDefault();
+            console.log(e?.target);
         }
     },
     // components: {
     //     CountUp
     // },
-    mounted() {
+    async mounted() {
+        await this.postData();
+
+        // console.log(typeof this.sample);
+        // console.log(typeof this.carObject);
+
         var spinner = function () {
             setTimeout(function () {
                 if ($('#spinner').length > 0) {
@@ -538,10 +546,27 @@ export default {
 
     }
 }
-
 </script>
 
-<style scoped>
+<style>
+@import "vue-select/dist/vue-select.css";
+
+.vs__selected-options{
+    background-color: white;
+}
+
+input.vs__search {
+    background-color: white;
+    height: 55px;
+    border-radius: 10px;
+}
+
+input.vs__search:focus {
+    background-color: white;
+    height: 55px;
+    border-radius: 10px;
+}
+
 input {
     width: 100%;
 }

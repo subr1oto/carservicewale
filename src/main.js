@@ -11,6 +11,10 @@ import "bootstrap"
 
 import 'mdb-ui-kit/css/mdb.min.css';
 
+import vSelect from "vue-select";
+
+import "vue-select/dist/vue-select.css";
+
 
 
 // import CountUp from 'vue-countup-v3'
@@ -18,4 +22,4 @@ import 'mdb-ui-kit/css/mdb.min.css';
 
 // import jquery from 'jquery';
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).component("v-select", vSelect).mount('#app')
