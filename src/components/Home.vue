@@ -16,40 +16,16 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-dark h-100 d-flex flex-column justify-content-center text-center p-5">
-                        <h1 class="text-white mb-4">Book For A Service</h1>
+                        <h1 class="text-white mb-4">Looking for a service?</h1>
                         <form>
                             <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                <div class="col-12 col-sm-12">
+                                    <input type="text" class="form-control border-0" placeholder="Select Your Car" style="height: 55px;">
                                 </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select Your Brand</option>
-                                        <option value="1">KIA</option>
-                                        <option value="2">HONDA</option>
-                                        <option value="3">TATA</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select Your Model</option>
-                                        <option value="1">KIA</option>
-                                        <option value="2">HONDA</option>
-                                        <option value="3">TATA</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Select Car Type</option>
-                                        <option value="1">PETROL</option>
-                                        <option value="2">DIESEL</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-secondary w-100 py-3" type="submit">View Services</button>
+                                <div class="col-md-12">
+                                    <router-link to="/service">
+                                        <button class="btn btn-secondary w-100 py-3 float-end" type="submit">View Services</button>
+                                    </router-link>
                                 </div>
                             </div>
                         </form>

@@ -58,7 +58,7 @@
                     Services
                 </router-link>
                 <router-link :to="{name:'Service'}" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
-                    Contact Us
+                    <i class="fa-solid fa-cart-shopping"></i>Cart
                 </router-link>
             </div>
 
