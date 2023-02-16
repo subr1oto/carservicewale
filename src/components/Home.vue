@@ -3,8 +3,7 @@
 
     <Header />
 
-
-    <!-- Caruosel -->
+    <!-- Carousel -->
     <div class="container-fluid bg-secondary booking  wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
@@ -25,34 +24,22 @@
                                 <div class="container-fluid">
                                     <form class="d-flex row g-3" role="search">
                                         <div class="col-12 col-sm-12">
-                                            <!-- <v-select
-                                                :filter="fuseSearch"
-                                                :options="carObject"
-                                                :get-option-label="(option) => option.modelName"
-                                                v-model="search"
-                                            >
-                                                <template #option="{ carObject }">
-                                                {{ carObject.brandName }}
-                                                <br />
-                                                <cite>{{ carObject.type }} {{ carObject.price }}</cite>
-                                                </template>
-                                            </v-select> -->
-                                            <v-select :options="carObject" label="modelName" :keydown="handlers()">
+                                            <v-select :options="carObject" label="model" :filterBy="filterList" @search="myFilter">
                                                 <template v-slot:option="option">
-                                                    {{ option.modelName }} <br>
+                                                    {{ option.model }} <br>
+                                                    <cite>{{ option.brand }}</cite> <br>
                                                     <cite>{{ option.type }}</cite>
                                                     <img
-                                                    :src="option.logo"
-                                                    style="float: right; border-radius: 10px"
-                                                    width="25"
+                                                    :src="option.image"
+                                                    style="float: right; border-radius: 40px"
+                                                    width="48"
                                                     />
                                                 </template>
                                             </v-select>
-                                        
                                             </div>
                                             <div class="col-md-12">
                                                 <router-link to="/service">
-                                                    <button type="button" :disabled="search.length ? false:true" class="btn btn-primary border-0 my-1 w-100" style="height: 55px;">Book Now</button>
+                                                    <button type="button" class="btn btn-primary border-0 my-1 w-100" style="height: 55px;">Book Now</button>
                                                 </router-link>
                                             </div>
                                     </form>
@@ -414,9 +401,6 @@
     </div>
     <!-- Service End -->
 
-
-
-
     <Footer />
 </template>
 
@@ -424,62 +408,13 @@
 import $ from 'jquery';
 import Header from "./Header.vue"
 import Footer from "./Footer.vue"
-import vSelect from "vue-select";
-import Fuse from 'fuse.js'
-// import { url } from 'inspector';
+import axios from 'axios';
+import { reactive } from 'vue';
+
 export default {
-    components: { Header, Footer, vSelect },
-    data() {
-        return {
-            attributes: {
-                'value': this.search
-            },
-            events: {
-                'input': (e) => this.search = e.target.value
-            },
-            carObject: [],
-            search: ""
-        }
-    },
-    methods: {
-        fuseSearch(options, search) {
-        const fuse = new Fuse(options, {
-            keys: ['carObject','carObject.modelName', 'carObject.type', 'carObject.brandName'],
-            shouldSort: true,
-        })
-        return this.search.length
-            ? fuse.search(search).map(({ item }) => item)
-            : fuse.list
-        },
-
-        async postData() {
-            const response = await fetch('http://localhost:3000/models', {
-                method: 'GET',
-                mode: 'cors', 
-                cache: 'no-cache', 
-                credentials: 'same-origin',
-                headers: {
-                'Content-Type': 'application/json'
-                },
-                redirect: 'follow',
-                referrerPolicy: 'no-referrer'
-            });
-            this.carObject = await response.json();
-            return response;
-        },
-        handlers(e){
-            e?.preventDefault();
-            console.log(e?.target);
-        }
-    },
-    // components: {
-    //     CountUp
-    // },
+    components: { Header, Footer},
     async mounted() {
-        await this.postData();
-
-        // console.log(typeof this.sample);
-        // console.log(typeof this.carObject);
+        await this.getData();
 
         var spinner = function () {
             setTimeout(function () {
@@ -489,11 +424,6 @@ export default {
             }, 1);
         };
         spinner();
-
-        // $('[data-toggle="counter-up"]').counterUp({
-        //     delay: 10,
-        //     time: 2000
-        // });
 
         // Sticky Navbar
         $(window).scroll(function () {
@@ -544,12 +474,59 @@ export default {
             return false;
         });
 
-    }
+    },
+    data() {
+        return {
+            offset: 0,
+            limit: 10,
+
+            carObject: reactive([]),
+            search: "",
+            pushTags: true,
+        }
+    },
+    methods: {
+
+        filterList: (option, label, search) => {
+            let temp = search.toLowerCase();
+            return option.model.toLowerCase().indexOf(temp) > -1 || option.brand.toLowerCase().indexOf(temp) > -1 ||
+            option.type.toLowerCase().indexOf(temp) > -1
+        },
+
+        async myFilter(event) {
+            const response = await axios.get(`http://192.168.29.223:8000/car/view-cars?search=${event}`);
+            this.carObject = JSON.parse(JSON.stringify(response.data.data.Assets.map(obj => obj)));
+            console.log(JSON.parse(JSON.stringify(this.carObject)));
+        },
+        
+        async getData() {
+            const response = await axios.get(`http://192.168.29.223:8000/car/view-cars`);
+            this.carObject = response.data.data.Assets;
+            // console.log(response.data.data.Assets);
+            return response.data;
+        },
+
+        handlers(e){
+            e?.preventDefault();
+            console.log(e?.target);
+        }
+    },
 }
 </script>
 
 <style>
 @import "vue-select/dist/vue-select.css";
+
+.pagination {
+    display: flex;
+    margin: 0.25rem 0.25rem 0;
+}
+.pagination button {
+    flex-grow: 1;
+}
+.pagination button:hover {
+    cursor: pointer;
+}
 
 .vs__selected-options{
     background-color: white;

@@ -15,11 +15,4 @@ import vSelect from "vue-select";
 
 import "vue-select/dist/vue-select.css";
 
-
-
-// import CountUp from 'vue-countup-v3'
-// import 'animate.css';
-
-// import jquery from 'jquery';
-
 createApp(App).use(router).component("v-select", vSelect).mount('#app')
