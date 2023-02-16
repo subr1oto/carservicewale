@@ -1,11 +1,11 @@
 <template>
        <!-- Spinner Start -->
-       <div id="spinner"
+       <!-- <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border carServ" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only" style="overflow: hidden;">Loading...</span>
         </div>
-    </div>
+    </div> -->
     <!-- Spinner End -->
     
     <!-- Topbar Start -->
@@ -57,7 +57,7 @@
                 <router-link :to="{name:'Service'}" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
                     Services
                 </router-link>
-                <router-link :to="{name:'Service'}" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
+                <router-link :to="{name:'CartPage'}" :class="getActiveNavLink('CartPage')" class="nav-item nav-link menu">
                     <i class="fa-solid fa-cart-shopping"></i>Cart
                 </router-link>
             </div>

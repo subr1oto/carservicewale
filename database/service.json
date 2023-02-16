@@ -1,0 +1,23 @@
+{
+    "service":[
+    {
+        "name":"Regular Service",
+        "price": "12,999",
+        "oldPrice":"14,999",
+        "serviceTime":"40hrs"
+    },
+    {
+        "name":"Standard Service",
+        "price": "13,999",
+        "oldPrice":"15,999",
+        "serviceTime":"40hrs"
+    },
+    {
+        "name":"Complete Service",
+        "price": "14,999",
+        "oldPrice":"17,999",
+        "serviceTime":"40hrs"
+    }
+
+]
+}
