@@ -6,16 +6,6 @@
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6 py-5">
-                    <div class="py-5">
-                        <h1 class="text-white mb-4">Explore our top rated services</h1>
-                        <p class="text-white mb-0">
-                            Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd
-                            ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo
-                            rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod
-                            et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit.
-                            Sea dolore sanctus sed et. Takimata takimata sanctus sed.
-                        </p>
-                    </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="bg-dark h-100 d-flex flex-column justify-content-center text-center p-5">
@@ -44,29 +34,29 @@
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients section-bg">
         <div class="container">
-            <div class="row" data-aos="zoom-in">
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center services-name">
-                    <h5>Schedule Services</h5>
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-6">
+                    <span class="category">Schedule Services</span>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <h5>Cleaning & Detailing</h5>
+                <div class="col-lg-2 col-md-4 col-6 ">
+                    <span class="category">Denting Painting</span>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <h5>Denting Painting</h5>
+                <div class="col-lg-2 col-md-4 col-7">
+                    <span class="category">Cleaning & Detailing</span>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <h5>AC Services</h5>
+                <div class="col-lg-2 col-md-4 col-4">
+                    <span class="category">AC Service</span>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <h5>Battery Service</h5>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <span class="category">Battery Service</span>
                 </div>
 
-                <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                    <h5>Wheel Service</h5>
+                <div class="col-lg-2 col-md-4 col-6">
+                    <span class="category">Wheel Services</span>
                 </div>
             </div>
         </div>
@@ -87,16 +77,16 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-xs-12 col-md-6 bootstrap snippets bootdeys">
+            <div class="col-xs-12 col-md-6 col-sm-12 bootstrap snippets bootdeys">
                 <!-- product -->
                 <div class="product-content product-wrap clearfix">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4">
                             <div class="product-image">
                                 <img src="../components/images/about.jpg" alt="194x228" class="img-responsive" />
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="col-md-8">
                             <div class="product-deatil">
                                 <h4 class="name">Regular Service</h4>
                                 <h5 class="price-container">
@@ -105,7 +95,8 @@
                                         18,900</span>
                                     <span class="badge badge-success">12% off</span>
                                 </h5>
-                                <div class="col-md-12 col-sm-12 col-xs-6">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
                                     <div class="rating">
                                         <label for="stars-rating-5"><i class="fa fa-star checked"></i></label>
                                         <label for="stars-rating-4"><i class="fa fa-star checked"></i></label>
@@ -115,6 +106,8 @@
                                         <span class="reviews">400 Ratings & 133 Reviews</span>
                                     </div>
                                 </div>
+                                </div>
+                               
                                 <div class="col-md-12">
                                     <p>
                                         <i class="fa-solid fa-circle-check text-success"></i>
@@ -134,32 +127,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
                             <div class="row">
-                                <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
+                                <div class="col-lg-4 col-md-6 mt-2" style="color: #747977;font-family: Barlow,sans-serif">
                                 </div>
-                                <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
-                                </div>
-                                <div class="col-lg-4">
-                                    <button class="btn btn-primary mr-auto">Add to cart</button>
+                                <!-- <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
+                                </div> -->
+                                <div class="col-lg-6 col-md-6">
+                                    <button class="btn btn-primary mr-auto cart"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <!-- end product -->
             </div>
 
-            <div class="col-xs-12 col-md-6 bootstrap snippets bootdeys">
+            <div class="col-xs-12 col-md-6 col-sm-12 bootstrap snippets bootdeys">
                 <!-- product -->
                 <div class="product-content product-wrap clearfix">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4">
                             <div class="product-image">
                                 <img src="../components/images/about.jpg" alt="194x228" class="img-responsive" />
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="col-md-8">
                             <div class="product-deatil">
                                 <h4 class="name">Regular Service</h4>
                                 <h5 class="price-container">
@@ -168,7 +159,8 @@
                                         18,900</span>
                                     <span class="badge badge-success">12% off</span>
                                 </h5>
-                                <div class="col-md-12 col-sm-12 col-xs-6">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
                                     <div class="rating">
                                         <label for="stars-rating-5"><i class="fa fa-star checked"></i></label>
                                         <label for="stars-rating-4"><i class="fa fa-star checked"></i></label>
@@ -178,6 +170,8 @@
                                         <span class="reviews">400 Ratings & 133 Reviews</span>
                                     </div>
                                 </div>
+                                </div>
+                               
                                 <div class="col-md-12">
                                     <p>
                                         <i class="fa-solid fa-circle-check text-success"></i>
@@ -197,32 +191,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
                             <div class="row">
-                                <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
+                                <div class="col-lg-4 col-md-6 mt-2" style="color: #747977;font-family: Barlow,sans-serif">
                                 </div>
                                 <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
                                 </div>
-                                <div class="col-lg-4">
-                                    <button class="btn btn-primary mr-auto">Add to cart</button>
+                                <div class="col-lg-4 col-md-6">
+                                    <button class="btn btn-primary mr-auto cart"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <!-- end product -->
             </div>
 
-            <div class="col-xs-12 col-md-6 bootstrap snippets bootdeys">
+            <div class="col-xs-12 col-md-6 col-sm-12 bootstrap snippets bootdeys">
                 <!-- product -->
                 <div class="product-content product-wrap clearfix">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4">
                             <div class="product-image">
                                 <img src="../components/images/about.jpg" alt="194x228" class="img-responsive" />
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="col-md-8">
                             <div class="product-deatil">
                                 <h4 class="name">Regular Service</h4>
                                 <h5 class="price-container">
@@ -231,7 +223,8 @@
                                         18,900</span>
                                     <span class="badge badge-success">12% off</span>
                                 </h5>
-                                <div class="col-md-12 col-sm-12 col-xs-6">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
                                     <div class="rating">
                                         <label for="stars-rating-5"><i class="fa fa-star checked"></i></label>
                                         <label for="stars-rating-4"><i class="fa fa-star checked"></i></label>
@@ -241,6 +234,8 @@
                                         <span class="reviews">400 Ratings & 133 Reviews</span>
                                     </div>
                                 </div>
+                                </div>
+                               
                                 <div class="col-md-12">
                                     <p>
                                         <i class="fa-solid fa-circle-check text-success"></i>
@@ -260,32 +255,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
                             <div class="row">
-                                <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
+                                <div class="col-lg-4 col-md-6 mt-2" style="color: #747977;font-family: Barlow,sans-serif">
                                 </div>
                                 <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
                                 </div>
-                                <div class="col-lg-4">
-                                    <button class="btn btn-primary mr-auto">Add to cart</button>
+                                <div class="col-lg-4 col-md-6">
+                                    <button class="btn btn-primary mr-auto cart"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <!-- end product -->
             </div>
 
-            <div class="col-xs-12 col-md-6 bootstrap snippets bootdeys">
+            <div class="col-xs-12 col-md-6 col-sm-12 bootstrap snippets bootdeys">
                 <!-- product -->
                 <div class="product-content product-wrap clearfix">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="col-md-4">
                             <div class="product-image">
                                 <img src="../components/images/about.jpg" alt="194x228" class="img-responsive" />
                             </div>
                         </div>
-                        <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="col-md-8">
                             <div class="product-deatil">
                                 <h4 class="name">Regular Service</h4>
                                 <h5 class="price-container">
@@ -294,7 +287,8 @@
                                         18,900</span>
                                     <span class="badge badge-success">12% off</span>
                                 </h5>
-                                <div class="col-md-12 col-sm-12 col-xs-6">
+                                <div class="row">
+                                    <div class="col-md-12 col-12">
                                     <div class="rating">
                                         <label for="stars-rating-5"><i class="fa fa-star checked"></i></label>
                                         <label for="stars-rating-4"><i class="fa fa-star checked"></i></label>
@@ -304,6 +298,8 @@
                                         <span class="reviews">400 Ratings & 133 Reviews</span>
                                     </div>
                                 </div>
+                                </div>
+                               
                                 <div class="col-md-12">
                                     <p>
                                         <i class="fa-solid fa-circle-check text-success"></i>
@@ -323,17 +319,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="card-footer">
                             <div class="row">
-                                <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
+                                <div class="col-lg-4 col-md-6 mt-2" style="color: #747977;font-family: Barlow,sans-serif">
                                 </div>
                                 <div class="col-lg-4" style="color: #747977;font-family: Barlow,sans-serif">
                                 </div>
-                                <div class="col-lg-4">
-                                    <button class="btn btn-primary mr-auto">Add to cart</button>
+                                <div class="col-lg-4 col-md-6">
+                                    <button class="btn btn-primary mr-auto cart"><i class="fa-solid fa-cart-shopping"></i>Add to cart</button>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 </div>
                 <!-- end product -->
@@ -414,7 +408,9 @@ import $ from "jquery";
 export default {
     components: { Header, Footer },
     data() {
-        return {};
+        return {
+            
+        };
     },
     mounted() {
         var spinner = function () {
@@ -444,18 +440,6 @@ body {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 }
 
-.product-content .carousel-control.left {
-    margin-left: 0;
-}
-
-.product-content .product-image {
-    background-color: #fff;
-    display: block;
-    min-height: 238px;
-    overflow: hidden;
-    position: relative;
-}
-
 .product-content .product-deatil {
     /* border-bottom: 1px solid #dfe5e9; */
     padding-bottom: 17px;
@@ -465,165 +449,12 @@ body {
     background: #fff;
 }
 
-.product-content .product-deatil h5 a {
-    color: #2f383d;
-    font-size: 15px;
-    line-height: 19px;
-    text-decoration: none;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.product-content .product-deatil h5 a span {
-    color: #9aa7af;
-    display: block;
-    font-size: 13px;
-}
-
-.product-content .product-deatil span.tag1 {
-    border-radius: 50%;
-    color: #fff;
-    font-size: 15px;
-    height: 50px;
-    padding: 13px 0;
-    position: absolute;
-    right: 10px;
-    text-align: center;
-    top: 10px;
-    width: 50px;
-}
-
-.product-content .product-deatil span.sale {
-    background-color: #21c2f8;
-}
-
-.product-content .product-deatil span.discount {
-    background-color: #71e134;
-}
-
-.product-content .product-deatil span.hot {
-    background-color: #fa9442;
-}
-
-.product-content .description {
-    font-size: 15px;
-    line-height: 20px;
-    padding: 10px 14px 16px 19px;
-    background: #fff;
-}
-
-.product-content .product-info {
-    padding: 11px 19px 10px 20px;
-}
-
-.product-content .product-info a.add-to-cart {
-    color: #2f383d;
-    font-size: 13px;
-    padding-left: 16px;
-}
-
-.product-content name.a {
-    padding: 5px 10px;
-    margin-left: 16px;
-}
-
-.product-info.smart-form .btn {
-    padding: 6px 12px;
-    margin-left: 12px;
-    margin-top: -10px;
-}
-
-.product-entry .product-deatil {
-    /* border-bottom: 1px solid #dfe5e9; */
-    padding-bottom: 17px;
-    padding-left: 16px;
-    padding-top: 16px;
-    position: relative;
-}
-
-.product-entry .product-deatil h5 a {
-    color: #2f383d;
-    font-size: 15px;
-    line-height: 19px;
-    text-decoration: none;
-}
-
-.product-entry .product-deatil h5 a span {
-    color: #9aa7af;
-    display: block;
-    font-size: 13px;
-}
-
-.load-more-btn {
-    background-color: #21c2f8;
-    /* border-bottom: 2px solid #037ca5; */
-    border-radius: 2px;
-    /* border-top: 2px solid #0cf; */
-    margin-top: 20px;
-    padding: 9px 0;
-    width: 100%;
-}
-
 .strike-price {
     font-size: 18px;
     margin-left: 15px;
     color: #696969;
     text-decoration: line-through;
 }
-
-.product-info.smart-form .rating label {
-    margin-top: 0;
-}
-
-.product-wrap .product-image span.tag2 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    padding: 10px 0;
-    color: #fff;
-    font-size: 11px;
-    text-align: center;
-}
-
-.product-wrap .product-image span.sale {
-    background-color: #57889c;
-}
-
-.product-wrap .product-image span.hot {
-    background-color: #a90329;
-}
-
-.shop-btn {
-    position: relative;
-}
-
-.shop-btn>span {
-    background: #a90329;
-    display: inline-block;
-    font-size: 10px;
-    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.07);
-    font-weight: 700;
-    border-radius: 50%;
-    padding: 2px 4px 3px !important;
-    text-align: center;
-    line-height: normal;
-    width: 19px;
-    top: -7px;
-    left: -7px;
-}
-
-.description-tabs {
-    padding: 30px 0 5px !important;
-}
-
-.description-tabs .tab-content {
-    padding: 10px 0;
-}
-
 .product-deatil {
     padding: 30px 30px 50px;
 }
@@ -632,18 +463,6 @@ body {
     padding: 0 0 5px !important;
 }
 
-.product-deatil .carousel-control.left,
-.product-deatil .carousel-control.right {
-    background: none !important;
-}
-
-.product-deatil .glyphicon {
-    color: #3276b1;
-}
-
-.product-deatil .product-image {
-    /* border-right: 0px solid #fff !important */
-}
 
 .product-deatil .name {
     margin-top: 0;
@@ -668,87 +487,6 @@ body {
     font-size: 12px;
 }
 
-.product-deatil .fa-2x {
-    font-size: 16px !important;
-}
-
-.product-deatil .fa-2x>h5 {
-    font-size: 12px;
-    margin: 0;
-}
-
-.product-deatil .fa-2x+a,
-.product-deatil .fa-2x+a+a {
-    font-size: 13px;
-}
-
-.product-deatil .certified {
-    margin-top: 10px;
-}
-
-.product-deatil .certified ul {
-    padding-left: 0;
-}
-
-.product-deatil .certified ul li:not(first-child) {
-    margin-left: -3px;
-}
-
-.product-deatil .certified ul li {
-    display: inline-block;
-    background-color: #f9f9f9;
-    padding: 13px 19px;
-}
-
-.product-deatil .certified ul li:first-child {
-    border-right: none;
-}
-
-.product-deatil .certified ul li a {
-    text-align: left;
-    font-size: 12px;
-    color: #6d7a83;
-    line-height: 16px;
-    text-decoration: none;
-}
-
-.product-deatil .certified ul li a span {
-    display: block;
-    color: #21c2f8;
-    font-size: 13px;
-    font-weight: 700;
-    text-align: center;
-}
-
-.product-deatil .message-text {
-    width: calc(100% - 70px);
-}
-
-@media only screen and (min-width: 1024px) {
-    .product-content div[class*="col-md-4"] {
-        padding-right: 0;
-    }
-
-    .product-content div[class*="col-md-8"] {
-        padding: 0 13px 0 0;
-    }
-
-    .product-wrap div[class*="col-md-4"] {
-        padding-right: 0;
-    }
-
-    .product-wrap div[class*="col-md-7"] {
-        padding: 0 13px 0 0;
-    }
-
-    .product-content .product-image {
-        /* border-right: 1px solid #dfe5e9 */
-    }
-
-    .product-content .product-info {
-        position: relative;
-    }
-}
 
 .checked {
     color: orange;
@@ -775,13 +513,44 @@ p {
     margin-right: 8px;
 }
 
-.btn {
-    border-radius: 5px;
-}
-
-
 .read-more {
     color: #0d6efd;
     font-weight: 500;
+}
+span.category{
+    font-size: 20px;
+    font-family: "Barlow",sans-serif;
+    font-size: 1.25rem;
+    color:black;
+    cursor: pointer;
+}
+span.category:hover{
+    color:#0d6efd;
+    cursor: pointer;
+}
+.cart{
+        width: 95%;
+        margin-bottom: 10px;
+        padding:12px;
+        margin-left:100px;
+    }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+    span.category{
+        color:rgb(65, 65, 65);
+        font-family: "Barlow",sans-serif;
+        font-size: 1rem;
+        word-wrap:inherit;
+        cursor: pointer;
+    }
+    .cart{
+        width: 95%;
+        margin-bottom: 10px;
+        padding:15px
+    }
+    .reviews{
+        font-size: 14.5px;
+    }
 }
 </style>
