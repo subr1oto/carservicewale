@@ -47,6 +47,31 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="col-3 d-flex col-sm-3 float-start mx-5 my-1">
+                <div style="margin-right: 83%; margin-bottom: 50px;"></div>
+                <v-select  placeholder="select a car" v-model="SingleCarData" :options="carObject" label="model" :filterBy="filterList" @search="myFilter">
+                    <template #selected-option="option">                 
+                        <div class="selected-div" style="background-color: transparent; width: 275px; min-height: 34px; display: flex">                     
+                            <img height="28" :src="option.logo" class="selected-logo"/>
+                            <div class="span-item">
+                                <span style="color: black; position: relative; margin: 5px; top: -5px;">{{ option.model }}</span>                 
+                            </div>                     
+                            <img height="28" :src="option.image" class="selected-image"/>                     
+                        </div>             
+                    </template>
+                    <template v-slot:option="option">
+                        {{ option.model }} <br>
+                        <cite>{{ option.brand }}</cite> <br>
+                        <cite>{{ option.type }}</cite>
+                        <img
+                        :src="option.image"
+                        style="float: right; border-radius: 40px"
+                        width="48"
+                        />
+                    </template>
+                </v-select>
+                <div style="margin-right: 19%; margin-bottom: 50px;"></div>
+            </div>
             <div class="navbar-nav ms-auto p-4 p-lg-0">
                 <router-link :to="{ name: 'Home' }" :class="getActiveNavLink('Home')" class="nav-item nav-link menu">
                     Home
@@ -57,30 +82,50 @@
                 <router-link :to="{ name: 'Service' }" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
                     Services
                 </router-link>
-                <!-- <router-link :to="{ name: 'Service' }" :class="getActiveNavLink('Service')" class="nav-item nav-link menu">
-                    Contact Us
-                </router-link> -->
                 <router-link :to="{ name: 'Login' }" :class="getActiveNavLink('Login')" class="nav-item nav-link menu">
                     Login
                 </router-link>
             </div>
-
         </div>
     </nav>
     <!-- Navbar End -->
 
 </template>
+
 <script>
+import { reactive } from 'vue';
+import axios from 'axios';
 export default {
     name: "HeaderComponent",
+    async mounted() {
+        await this.getData();
+    },
+    data(){
+        return{
+            SingleCarData:"",
+            carObject: reactive([]),
+        }
+    },
     methods: {
-        getActiveNavLink(name) {
-            //This is for the navbar classes, you can modify them as
-            //as you need. (This will be assigned every-time we call this
-            //function).
-            let classString = "nav-item nav-link "
+        filterList: (option, label, search) => {
+            let temp = search.toLowerCase();
+            return option.model.toLowerCase().indexOf(temp) > -1 || option.brand.toLowerCase().indexOf(temp) > -1 ||
+            option.type.toLowerCase().indexOf(temp) > -1
+        },
 
-            //We compare the given name with the route current name.
+        async myFilter(event) {
+            const response = await axios.get(`http://192.168.29.223:8000/car/view-cars?search=${event}`);
+            this.carObject = JSON.parse(JSON.stringify(response.data.data.Assets.map(obj => obj)));
+            console.log(JSON.parse(JSON.stringify(this.carObject)));
+        },
+        
+        async getData() {
+            const response = await axios.get(`http://192.168.29.223:8000/car/view-cars`);
+            this.carObject = response.data.data.Assets;
+            return response.data;
+        },
+        getActiveNavLink(name) {
+            let classString = "nav-item nav-link "
             if (this.$route.name === name) {
                 //If it is true, we append to the class string the "active" value
                 classString += "active"
@@ -92,8 +137,77 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+
+@import "vue-select/dist/vue-select.css";
+
+.span-item{
+    top: 3px;
+    position: relative;
+    min-width: -webkit-fill-available;
+    text-align: center;
+}
+
+.vs__actions {
+    background-color: transparent !important;
+}
+
+.selected-image{
+    top: -10px;
+    position: relative;
+    height: 40px;
+    margin-left: -35px
+}
+
+.selected-logo{
+    height: 46px;
+    top: -13px;
+    position: relative;
+    margin-right: -29px;
+}
+
+div#vs1__combobox {
+    width: 396px;
+    border: 2px solid #688bc7;
+    border-radius: 30px;
+    height: 46px;
+    padding: 7px;
+}
+
+.vs--searchable .vs__dropdown-toggle {
+    cursor: text;
+    height: 44px;
+}
+input.vs__search {
+    background-color: transparent !important;
+    height: 23px !important;
+    border-radius: 10px;
+}
+.brand-logo {
+    float: left;
+    border-radius: 10px;
+    width: 19%;
+    margin-right: 5px;
+    top: -5px;
+    position: relative;
+    height: 59px;
+}
+
+.model-logo {
+    float: right;
+    border-radius: 11px;
+    width: 20%;
+    top: -4px;
+    position: relative;
+    background: transparent;
+    height: 54px;
+}
+
 .nav-link {
     color: rgb(0, 125, 241);
+}
+
+:scope(img){
+    height: 50px;
 }
 </style>

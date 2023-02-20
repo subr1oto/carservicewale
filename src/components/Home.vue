@@ -16,38 +16,6 @@
                             ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="bg-dark h-100 d-flex flex-column justify-content-center text-center p-5">
-                        <h1 class="text-white mb-4">Book For A Service</h1>
-                        <form>
-                            <nav>
-                                <div class="container-fluid">
-                                    <form class="d-flex row g-3" role="search">
-                                        <div class="col-12 col-sm-12">
-                                            <v-select :options="carObject" label="model" :filterBy="filterList" @search="myFilter">
-                                                <template v-slot:option="option">
-                                                    {{ option.model }} <br>
-                                                    <cite>{{ option.brand }}</cite> <br>
-                                                    <cite>{{ option.type }}</cite>
-                                                    <img
-                                                    :src="option.image"
-                                                    style="float: right; border-radius: 40px"
-                                                    width="48"
-                                                    />
-                                                </template>
-                                            </v-select>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <router-link to="/service">
-                                                    <button type="button" class="btn btn-primary border-0 my-1 w-100" style="height: 55px;">Book Now</button>
-                                                </router-link>
-                                            </div>
-                                    </form>
-                                </div>
-                            </nav>
-                        </form>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -477,12 +445,7 @@ export default {
     },
     data() {
         return {
-            offset: 0,
-            limit: 10,
-
             carObject: reactive([]),
-            search: "",
-            pushTags: true,
         }
     },
     methods: {
@@ -502,7 +465,6 @@ export default {
         async getData() {
             const response = await axios.get(`http://192.168.29.223:8000/car/view-cars`);
             this.carObject = response.data.data.Assets;
-            // console.log(response.data.data.Assets);
             return response.data;
         },
 
@@ -517,6 +479,21 @@ export default {
 <style>
 @import "vue-select/dist/vue-select.css";
 
+.brandlogo {
+    float: left;
+    border-radius: 10px;
+    width: 12%;
+}
+
+.modellogo {
+    float: right;
+    border-radius: 10px;
+    width: 17%;
+}
+
+.vs__actions {
+    background-color: white;
+}
 .pagination {
     display: flex;
     margin: 0.25rem 0.25rem 0;
